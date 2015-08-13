@@ -1,6 +1,12 @@
 
 Slurps Github and runs PMD against commits.
 
+You need a `~/.github` property file with your Github OAuth token in it:
+
+`oauth=4d98173f7c075527cb64878561d1fe70`
+
+(More details here http://github-api.kohsuke.org/)
+
 Run with `./gradlew --daemon run` and hit http://localhost:8080/events.json
 
 At first you will get an empty collection `[]` but after a while you should see PMD complaining about everyone's code:
